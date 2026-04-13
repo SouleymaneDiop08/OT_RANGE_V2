@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "username": "admin",
+    "password": "$2a$10$QFrhiuEw2LEFfnCqv.JeNON6ngZg9Xy4RyXx9nihSRaWlsMJKOJVa",
+    "role": "admin",
+    "displayName": "Administrateur"
+  },
+  {
+    "id": "2",
+    "username": "superadmin",
+    "password": "$2a$10$AiJIGD35rkPuYaI8Y3cVPuFR2YkD17/lF1TBHP08vTLIm.ofiGbg.",
+    "role": "superadmin",
+    "displayName": "Super Administrateur"
+  },
+  {
+    "id": "1775229441117",
+    "username": "vieux",
+    "password": "$2a$10$qKSZFxzmlOZnNUzUKTNXsOy9PIatHMfoK1Q3d.8gtC4lmF1.8vm5G",
+    "role": "user",
+    "displayName": "Vieux Mbaye"
+  }
+]
