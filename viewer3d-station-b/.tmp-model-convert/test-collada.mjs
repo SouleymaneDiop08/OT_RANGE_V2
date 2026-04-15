@@ -1,0 +1,16 @@
+import fs from 'fs';
+import path from 'path';
+import { TextEncoder, TextDecoder } from 'util';
+import { DOMParser } from '@xmldom/xmldom';
+global.DOMParser = DOMParser;
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+const { ColladaLoader } = await import('three/examples/jsm/loaders/ColladaLoader.js');
+const src = '/home/kakashi_/ICSHUB/viewer3d-station-b/frontend/static/assets/extracted/electrical_substation/model.dae';
+const text = fs.readFileSync(src, 'utf8');
+const loader = new ColladaLoader();
+const result = loader.parse(text, path.dirname(src) + '/');
+console.log('scene children', result.scene.children.length);
+let meshes = 0, materials=0;
+result.scene.traverse((o)=>{ if (o.isMesh) {meshes++; if (Array.isArray(o.material)) materials += o.material.length; else if (o.material) materials++; }});
+console.log('meshes', meshes, 'materialsRefs', materials);

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@gltf-transform/cli": "^4.3.0",
+    "@gltf-transform/core": "^4.3.0",
+    "@gltf-transform/functions": "^4.3.0",
+    "@xmldom/xmldom": "^0.8.11",
+    "collada2gltf": "^0.0.0",
+    "sharp": "^0.34.5",
+    "three": "^0.183.2",
+    "xmldom": "^0.6.0"
+  }
+}
